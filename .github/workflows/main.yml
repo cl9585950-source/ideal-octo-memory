@@ -1,0 +1,17 @@
+@DF:name: Windows Cloud PC - Anydesk
+on:
+workflow_dispatch:
+jobs:
+build:
+name: Start Building...
+runs-on: windows-latest
+timeout-minutes: 10080
+env:
+PROCESSOR_COUNT: 4
+OPENGL: "1"
+GITHUB_PRESERVE_WORKFLOW: 
+steps:
+- name: Downloading & Installing Essentials
+run: |
+
+run: |
